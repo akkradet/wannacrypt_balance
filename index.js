@@ -26,7 +26,7 @@ function updateAll() {
             $('.wallets > div .wallet').eq(i).html(amount);
         });
 
-        var currency = values[3]['USD'];
+        var currency = values[5]['USD'];
         usd = btc * currency.buy;
         usd = currency.symbol + Math.round(usd).toLocaleString();
         $('#usd-total').html('(~' + usd + ')');
