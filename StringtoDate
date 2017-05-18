@@ -1,0 +1,27 @@
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author Anonymous
+ */
+public class day {
+
+    public static void main(String[] args) throws ParseException {
+
+            String startDateString = "2017-05-10";
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd"); 
+            Date startDate = df.parse(startDateString);
+            DateFormat df2 = new SimpleDateFormat("dd/MM/yyyy"); 
+            String startDateString2 = df2.format(startDate);
+            System.out.println("Date in format dd/MM/yyyy: " + startDateString2);
+
+    }
+}
